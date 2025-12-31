@@ -6,6 +6,26 @@
     <title>TIC-TAC-TOE</title>
 </head>
 <body>
-    
+    <h1 class="app-title"> TIC TAC TOE</h1>
+
+<div class="player-box">
+    <input type="text" id="player1" placeholder="Player 1 Name">
+    <input type="text" id="player2" placeholder="Player 2 Name">
+</div>
+
+<div class="player-box">
+    <p><b id="symbol-text">Player 1, choose your symbol:</b></p>
+    <button class="symbol-btn active" id="btnX" onclick="chooseSymbol(1)">Play as X</button>
+    <button class="symbol-btn" id="btnO" onclick="chooseSymbol(0)">Play as O</button>
+</div>
+
+<p id="text-current-player"></p>
+
+<div style="text-align:center;">
+    <button onclick="resetGame()">Reset Game</button>
+</div>
+
+
+<div class="tic-tac-toe-container" id="board"></div>
 </body>
 </html>
