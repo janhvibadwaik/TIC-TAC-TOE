@@ -1,0 +1,82 @@
+.box{
+            height:100px;
+            width:100px;
+            border:1px solid black;
+            margin:1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-sizing: border-box;
+
+        }
+        .tic-tac-toe-container{
+            display: flex;
+            flex-wrap: wrap;
+            width:400px;
+            margin:20px auto;
+        }
+        .app-title{
+            text-align: center;
+        }
+        .tile-icon{
+            height:70px;
+        }
+        .player-box{
+            text-align:center;
+            margin-bottom:10px;
+        }
+        .symbol-btn{
+            padding:8px 16px;
+            margin:5px;
+            cursor:pointer;
+        }
+        .active{
+            background-color:black;
+            color:white;
+        }
+        @media screen and (max-width: 500px) {
+    .tic-tac-toe-container {
+        width: 300px;
+    }
+
+    .box {
+        width: 90px;
+        height: 90px;
+    }
+
+    .tile-icon {
+        height: 60px;
+    }
+
+    .symbol-btn {
+        padding: 6px 12px;
+        margin: 3px;
+        font-size: 14px;
+    }
+
+    .player-box input {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .tic-tac-toe-container {
+        width: 250px;
+    }
+
+    .box {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tile-icon {
+        height: 50px;
+    }
+
+    .symbol-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}
